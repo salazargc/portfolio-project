@@ -1,8 +1,9 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
-  --heading-font-family: "Playfair Display", serif;
+  --branding-color: #fdc337;
+  --secondary-color: #ffffff;
+  --heading-font-family: "Playfair Display", serif; 
   --default-font-family: "Poppins", sans-serif;
+
 }
 
 body {
@@ -22,11 +23,11 @@ h6 {
 
 p {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 30px;
 }
 h1 {
-  font-size: 96px;
+  font-size: 40px;
   line-height: 1.5;
 }
 h2 {
@@ -38,18 +39,46 @@ h3 {
 
 .hero {
   background: var(--secondary-color);
-  text-align: center;
+  text-align: left;
+  display: flex;
   padding: 80px 20px;
+  flex-wrap: nowrap;
+  background-image:url("/images/background.png");
+  background-size: cover; 
 }
+ .hero > div{
+  text-align: left;
+  margin: 40px;
+  width: 486px;
+  height: 408;
+ }
+
+span {
+  font-size: 20px;
+  color: var(--branding-color);
+  font-family: "Nunito", serif;
+  font-weight: bold;
+  line-height: 1.2;
+  bottom: 10px;
+}
+
+p{
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+
 .content-container {
   padding: 160px 20px;
 }
 
-.hero p {
-  font-weight: bold;
-  font-size: 36px;
-  margin: 0;
-  color: #272142;
+
+
+.hero h1{
+  
+  line-height: 1.2;
+  text-align: left;                                           
+   
 }
 .hero h2 {
   font-family: var(--heading-font-family);
@@ -57,6 +86,24 @@ h3 {
   font-size: 24px;
   line-height: 2;
 }
+
+
+/* Image Content */
+.image-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content img {
+  width: 720px;
+  height: px;
+  z-index: 2;
+}
+
+
+
 .content-container {
   text-align: center;
   padding: 60px 20px;
@@ -84,21 +131,27 @@ h3 {
 
 .btn-branding {
   background: var(--branding-color);
-  border-radius: 4px;
-  color: white;
+  border: 2px solid var(--branding-color);
+  border-radius: 8px;
+  color: black;
   font-size: 18px;
-  line-height: 18px;
-  padding: 15px 30px;
+  line-height: 1.5;
+  padding: 8px 24px; 
 }
 
 .btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
+  color: black;
+  border: 2px solid black;
+  border-style: inset;
+  border-radius: 8px;
   font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
+  line-height: 1.5;
+  padding: 8px 24px;
+  
 }
+
+
+
 
 .project-description {
   padding: 120px 60px;
